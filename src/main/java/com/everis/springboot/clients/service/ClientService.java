@@ -8,6 +8,6 @@ import reactor.core.publisher.Mono;
 
 public interface ClientService {
 	
-	ResponseEntity<?> saveClient(ClientDocument client);
+	Mono<ResponseEntity<?>> saveClient(ClientDocument client);
 
 }
